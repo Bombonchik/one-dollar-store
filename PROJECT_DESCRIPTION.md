@@ -1,6 +1,7 @@
+
 # Project Description
 
-**Deployed Frontend URL:** [TODO: PASTE VERCEL APP URL HERE]
+**Deployed Frontend URL:** https://one-dollar-store.vercel.app/
 
 **Solana Program ID:** `6wuLk2iZ7gca4t3nbNiZYjspFEr8L9xGDwWeMAhojPMw`
 
@@ -40,9 +41,9 @@ The project follows a modular Anchor architecture, separating state, instruction
 I implemented Program Derived Addresses (PDAs) to create deterministic, searchable addresses for products and receipts without requiring a centralized database.
 
 **PDAs Used:**
-- **ListingConfig**: `["listing", seller_pubkey, name_seed]`
+- **ListingConfig**: `["LISTING_SEED", seller_pubkey, name_seed]`
     - **Purpose:** Stores the product details (price, image, active state). Using the name as a seed allows a single seller to create multiple distinct products.
-- **Receipt**: `["receipt", buyer_pubkey, listing_pubkey, receipt_seed]`
+- **Receipt**: `["RECEIPT_SEED", buyer_pubkey, listing_pubkey, receipt_seed]`
     - **Purpose:** Serves as proof of purchase. It links the specific Buyer to the specific Listing. The `receipt_seed` (random) allows a user to buy the same item multiple times.
 
 ### Program Instructions
