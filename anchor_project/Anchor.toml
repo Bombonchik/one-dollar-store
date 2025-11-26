@@ -15,8 +15,9 @@ solana_product_listing = "6wuLk2iZ7gca4t3nbNiZYjspFEr8L9xGDwWeMAhojPMw"
 url = "https://api.apr.dev"
 
 [provider]
-#cluster = "localnet"
-cluster = "devnet"
+cluster = "localnet"
+#cluster = "devnet"
+
 wallet = "~/.config/solana/id.json"
 
 [scripts]
